@@ -46,7 +46,7 @@ const ProfileCard = () => {
 
           <Separator className="my-4" />
           <div className="space-y-4">
-            <h4 className="text-sm font-medium">Team</h4>
+            {/* <h4 className="text-sm font-medium">Team</h4> */}
             <div className="grid gap-6">
               <div className="flex items-center justify-between space-x-4">
                 <div className="flex items-center space-x-4">
@@ -86,20 +86,20 @@ const ProfileCard = () => {
             </a>
           </div> */}
           <div className="flex flex-wrap flex-row-5 gap-4 ">
-            <a href="" className="w-full">
+            <a href="https://github.com/theakashshukla/E-Sence-Web/fork" className="w-full">
               <Button className="w-full">
                 <Icons.fork className="mr-2 h-4 w-4" />
                 Fork Repository
               </Button>
             </a>
-            <a href="" className="w-full">
+            <a href="https://github.com/theakashshukla/E-Sence-Web/issues/new" className="w-full">
               <Button variant="outline" className="w-full">
                 <Icons.folderEdit className="mr-2 h-4 w-4" />
                 Feature Request
               </Button>
             </a>
             <a href="" className="w-full">
-              <Button variant="outline" className="w-full">
+              <Button variant="outline" className="w-full ">
                 <Icons.archive className="mr-2 h-4 w-4" />
                 Documents
               </Button>
@@ -111,7 +111,7 @@ const ProfileCard = () => {
                 Join Discord
               </Button>
             </a>
-            <a href="" className="w-full">
+            <a href="https://twitter.com/theskaai" className="w-full">
               <Button variant="outline" className="w-full">
                 <Icons.twitter className="mr-2 h-4 w-4" />
                 Build in Public
@@ -144,7 +144,13 @@ const ProfileCard = () => {
               </a>
             </div>
           </div> */}
+
         </CardContent>
+        <Separator className="my-4" />
+        <div className="item-center">
+          <CardContent>Made with ❤️ by Akash Shukla</CardContent>
+        </div>
+        
       </Card>
     </div>
   );
