@@ -146,12 +146,13 @@ const ProfileCard = () => {
           </div> */}
 
         </CardContent>
-        <Separator className="my-4" />
-        <div className="flex justify-center my-4">
-          <h1 className="text-sm">Made with ❤️ by Akash Shukla</h1>
-        </div>
+        
         
       </Card>
+      
+        <div className="flex justify-center my-6">
+          <h1 className="text-sm">Made with ❤️ by Akash Shukla</h1>
+        </div>
     </div>
   );
 };
