@@ -14,7 +14,7 @@ const ProfileCard = () => {
   return (
     <div>
       <Card >
-        <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
+        <CardHeader className="items-start gap-4 space-y-0">
           <div className="space-y-1">
             <CardTitle className="font-semibold">
               theakashshukla/e-Sence
