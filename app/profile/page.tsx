@@ -147,8 +147,8 @@ const ProfileCard = () => {
 
         </CardContent>
         <Separator className="my-4" />
-        <div className="item-center">
-          <CardContent>Made with ❤️ by Akash Shukla</CardContent>
+        <div className="flex justify-center my-5">
+          <h1>Made with ❤️ by Akash Shukla</h1>
         </div>
         
       </Card>
