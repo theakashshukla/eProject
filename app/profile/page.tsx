@@ -17,7 +17,7 @@ const ProfileCard = () => {
         <CardHeader className="items-start gap-4 space-y-0">
           <div className="space-y-1">
             <CardTitle className="font-semibold">
-              theakashshukla/e-Sence
+              theakashshukla/e-sence
             </CardTitle>
 
             <CardDescription className="font-semibold">
@@ -39,7 +39,7 @@ const ProfileCard = () => {
 
             <div>Nov 2023</div>
             <div className="flex items-center space-x-1 rounded-md text-secondary-foreground ">
-              <Icons.timer className="mr-2 h-4 w-4" />
+              <Icons.timer className="mr-2 h-4 w-4 text-green-400"/>
               Progress
             </div>
           </div>
