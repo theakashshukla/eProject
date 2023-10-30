@@ -7,10 +7,14 @@ import {
   CardDescription,
   CardHeader,
 } from "@/components/ui/card";
-import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
+
 const ProfileCard = () => {
+  const handleButtonClick = (url: string) => {
+    window.location.href = url;
+  };
+
   return (
     <div>
       <Card>
@@ -65,7 +69,7 @@ const ProfileCard = () => {
                     </a>
                   </div>
                 </div>
-                <a href="">
+                <a href="https://github.com/theakashshukla">
                   <Button variant="ghost">
                     Let&apos;s Connect
                     <Icons.arrowUpRight className="mt-1 ms-1 h-4 w-4" />
@@ -76,28 +80,36 @@ const ProfileCard = () => {
           </div>
 
           <Separator className="my-4" />
-          <div className="grid grid-cols-2 gap-6 my-2">
-            <Button variant="outline">
-              <Icons.folderEdit className="mr-2 h-4 w-4" />
-              Feature Request
-            </Button>
-            <Button variant="outline">
-              <Icons.fork className="mr-2 h-4 w-4" />
-              Fork Repository
-            </Button>
+          <div className="flex flex-cols-2 gap-6 my-2">
+            <a href="" className="w-full">
+              <Button variant="outline" className="w-full">
+                <Icons.folderEdit className="mr-2 h-4 w-4" />
+                Feature Request
+              </Button>
+            </a>
+            <a href="" className="w-full">
+              <Button variant="outline" className="w-full">
+                <Icons.fork className="mr-2 h-4 w-4" />
+                Fork Repository
+              </Button>
+            </a>
           </div>
           <div className="grid grid-cols-3 gap-4 my-2">
             <div>
-              <div className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary">
-                <Icons.github className="mb-3 h-6 w-6" />
-                Join Discord
-              </div>
+              <a href="">
+                <div className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary">
+                  <Icons.github className="mb-3 h-6 w-6" />
+                  Join Discord
+                </div>
+              </a>
             </div>
             <div>
-              <div className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary">
-                <Icons.archive className="mb-3 h-6 w-6" />
-                Documents
-              </div>
+              <a href="">
+                <div className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary">
+                  <Icons.archive className="mb-3 h-6 w-6" />
+                  Documents
+                </div>
+              </a>
             </div>
             <div>
               <a href="https://x.com/theskaai">
