@@ -11,27 +11,19 @@ import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 
 const ProfileCard = () => {
-  const handleButtonClick = (url: string) => {
-    window.location.href = url;
-  };
-
   return (
     <div>
-      <Card>
+      <Card >
         <CardHeader className="grid grid-cols-[1fr_110px] items-start gap-4 space-y-0">
           <div className="space-y-1">
             <CardTitle className="font-semibold">
-              theakashshukla/esence-web
+              theakashshukla/e-Sence
             </CardTitle>
+
             <CardDescription className="font-semibold">
               E-Sence is a cloud-based college management system that provides a
               easy-to-use solution for managing all aspects of your Institution.
             </CardDescription>
-          </div>
-
-          <div className="flex items-center space-x-1 rounded-md text-secondary-foreground">
-            <Icons.timer className="mr-2 h-4 w-4" />
-            In Progress
           </div>
         </CardHeader>
         <CardContent>
@@ -44,7 +36,12 @@ const ProfileCard = () => {
               <Icons.star className="mr-1 h-3 w-3" />
               12
             </div>
-            <div>Updated Nov 2023</div>
+
+            <div>Nov 2023</div>
+            <div className="flex items-center space-x-1 rounded-md text-secondary-foreground ">
+              <Icons.timer className="mr-2 h-4 w-4" />
+              Progress
+            </div>
           </div>
 
           <Separator className="my-4" />
@@ -80,7 +77,21 @@ const ProfileCard = () => {
           </div>
 
           <Separator className="my-4" />
-          <div className="flex flex-cols-2 gap-6 my-2">
+          {/* <div className="flex flex-cols-2 gap-6 my-2">
+            <a href="" className="w-full">
+              <Button className="w-full">
+                <Icons.fork className="mr-2 h-4 w-4" />
+                Fork Repository
+              </Button>
+            </a>
+          </div> */}
+          <div className="flex flex-wrap flex-row-5 gap-4 ">
+            <a href="" className="w-full">
+              <Button className="w-full">
+                <Icons.fork className="mr-2 h-4 w-4" />
+                Fork Repository
+              </Button>
+            </a>
             <a href="" className="w-full">
               <Button variant="outline" className="w-full">
                 <Icons.folderEdit className="mr-2 h-4 w-4" />
@@ -89,12 +100,25 @@ const ProfileCard = () => {
             </a>
             <a href="" className="w-full">
               <Button variant="outline" className="w-full">
-                <Icons.fork className="mr-2 h-4 w-4" />
-                Fork Repository
+                <Icons.archive className="mr-2 h-4 w-4" />
+                Documents
+              </Button>
+            </a>
+
+            <a href="" className="w-full">
+              <Button variant="outline" className="w-full">
+                <Icons.circle className="mr-2 h-4 w-4" />
+                Join Discord
+              </Button>
+            </a>
+            <a href="" className="w-full">
+              <Button variant="outline" className="w-full">
+                <Icons.twitter className="mr-2 h-4 w-4" />
+                Build in Public
               </Button>
             </a>
           </div>
-          <div className="grid grid-cols-3 gap-4 my-2">
+          {/* <div className="grid grid-cols-3 gap-4 my-2">
             <div>
               <a href="">
                 <div className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary">
@@ -106,8 +130,8 @@ const ProfileCard = () => {
             <div>
               <a href="">
                 <div className="flex flex-col items-center justify-between rounded-md border-2 border-muted bg-popover p-4 hover:bg-accent hover:text-accent-foreground peer-data-[state=checked]:border-primary [&:has([data-state=checked])]:border-primary">
-                  <Icons.archive className="mb-3 h-6 w-6" />
-                  Documents
+                  <Icons.github className="mb-3 h-6 w-6" />
+                  Join Discord
                 </div>
               </a>
             </div>
@@ -119,7 +143,7 @@ const ProfileCard = () => {
                 </div>
               </a>
             </div>
-          </div>
+          </div> */}
         </CardContent>
       </Card>
     </div>
